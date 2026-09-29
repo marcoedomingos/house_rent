@@ -1,0 +1,135 @@
+.mercado-page {
+  padding-top: 64px;
+  min-height: 100vh;
+}
+
+.mercado-page__header {
+  padding: 60px 0 48px;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.mercado-page__header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mercado-page__title {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  margin-top: 8px;
+}
+
+.mercado-page__subtitle {
+  font-size: 16px;
+  color: var(--text-2);
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.mercado-page__content {
+  padding: 48px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.mercado-page__section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Insights */
+.mercado-page__insights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.mercado-page__insight {
+  border-radius: var(--r-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all var(--t-mid);
+}
+.mercado-page__insight:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+}
+
+.mercado-page__insight-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.mercado-page__insight-cidade {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-2);
+}
+
+.mercado-page__insight-titulo {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-h);
+  line-height: 1.3;
+}
+
+.mercado-page__insight-desc {
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+
+.mercado-page__insight-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+  text-decoration: none;
+  margin-top: 4px;
+  transition: gap var(--t-fast);
+}
+.mercado-page__insight-link:hover { gap: 8px; }
+
+/* CTA */
+.mercado-page__cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: var(--r-xl);
+  padding: 32px 40px;
+  flex-wrap: wrap;
+}
+
+.mercado-page__cta-content h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.mercado-page__cta-content p {
+  font-size: 14px;
+  color: var(--text-2);
+}
+
+@media (max-width: 768px) {
+  .mercado-page__title { font-size: 32px; }
+  .mercado-page__insights { grid-template-columns: 1fr; }
+  .mercado-page__cta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+}

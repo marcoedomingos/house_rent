@@ -1,0 +1,223 @@
+.price-alert {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  border-radius: var(--r-xl);
+  padding: 32px;
+}
+
+.price-alert__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  color: var(--text);
+  cursor: pointer;
+  transition: all var(--t-fast);
+}
+.price-alert__close:hover {
+  background: var(--surface-hover);
+  color: var(--text-h);
+}
+
+.price-alert__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.price-alert__icon {
+  width: 52px;
+  height: 52px;
+  background: var(--green-dim);
+  border: 1px solid rgba(0,200,150,0.25);
+  border-radius: var(--r-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green);
+  margin-bottom: 4px;
+}
+
+.price-alert__title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-h);
+  margin: 0;
+}
+
+.price-alert__desc {
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.5;
+  margin: 0;
+}
+.price-alert__desc strong {
+  color: var(--text-h);
+}
+
+.price-alert__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.price-alert__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-alert__label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-h);
+  letter-spacing: 0.01em;
+}
+
+/* Alert Types */
+.price-alert__types {
+  display: flex;
+  gap: 6px;
+}
+.price-alert__type {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: transparent;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: all var(--t-fast);
+  text-align: center;
+  line-height: 1.3;
+}
+.price-alert__type:hover {
+  border-color: var(--border-hover);
+  color: var(--text-h);
+  background: var(--surface);
+}
+.price-alert__type--active {
+  border-color: rgba(0,200,150,0.4);
+  background: var(--green-dim);
+  color: var(--green);
+  font-weight: 600;
+}
+
+/* Inputs */
+.price-alert__price-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 10px 14px;
+  transition: border-color var(--t-fast);
+}
+.price-alert__price-input-wrap:focus-within {
+  border-color: var(--green);
+}
+.price-alert__price-icon {
+  color: var(--text-2);
+  flex-shrink: 0;
+}
+.price-alert__input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: var(--text-h);
+  min-width: 0;
+  font-family: var(--font);
+}
+.price-alert__input::placeholder { color: var(--text-2); }
+.price-alert__price-suffix {
+  font-size: 13px;
+  color: var(--text-2);
+  flex-shrink: 0;
+}
+
+.price-alert__price-hint {
+  font-size: 12px;
+  color: var(--green);
+  padding: 6px 10px;
+  background: var(--green-dim);
+  border-radius: var(--r-sm);
+}
+
+.price-alert__disclaimer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-2);
+  padding: 8px 12px;
+  background: var(--surface);
+  border-radius: var(--r-sm);
+}
+
+.price-alert__submit {
+  width: 100%;
+  justify-content: center;
+  font-size: 15px;
+  padding: 14px;
+}
+
+/* Success */
+.price-alert__success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.price-alert__success-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--green-dim);
+  border: 2px solid rgba(0,200,150,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green);
+}
+.price-alert__success-icon--amber {
+  background: var(--amber-dim);
+  border-color: rgba(245,158,11,0.3);
+  color: var(--amber);
+}
+
+.price-alert__success h2 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.price-alert__success p {
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.6;
+  max-width: 320px;
+}
+.price-alert__success p strong {
+  color: var(--text-h);
+}
